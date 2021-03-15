@@ -1,0 +1,15 @@
+.listmenu {
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  i {
+    margin-right: 10px;
+    svg {
+      path {
+        fill: #eaeaea;
+      }
+    }
+  }
+}
