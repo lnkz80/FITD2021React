@@ -1,14 +1,94 @@
-.listmenu {
+ul {
   li {
     display: flex;
     align-items: center;
-    justify-content: center;
+    i {
+      display: inline-flex;
+      margin-right: 10px;
+      svg {
+        path {
+          fill: #eaeaea;
+        }
+      }
+    }
+    span {
+      line-height: 0;
+    }
   }
-  i {
-    margin-right: 10px;
-    svg {
-      path {
-        fill: #eaeaea;
+}
+
+.headmenu {
+  padding-bottom: 10px;
+  // border-bottom: 1px solid #eaeaea;
+  li {
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+}
+.listmenu {
+  margin-top: 20px;
+  li {
+    background-color: #b0b0b0;
+    color: #355b70;
+    margin: 5px 10px;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      color: #eaeaea;
+      svg {
+        path {
+          fill: #eaeaea;
+        }
+      }
+    }
+    i {
+      margin-left: 20px;
+      svg {
+        path {
+          fill: #355b70;
+        }
+      }
+    }
+  }
+  .active {
+    background-color: #fdef6f;
+    &:hover {
+      cursor: default;
+      & span {
+        color: #355b70;
+      }
+      svg {
+        path {
+          fill: #355b70;
+        }
+      }
+    }
+  }
+}
+.submenu {
+  padding: 10px 0 10px 55px;
+  font-size: 0.9rem;
+  li {
+    padding: 0;
+    background-color: #355b70;
+    &:before {
+      content: '';
+      border: 4px solid transparent;
+      border-left: 6px solid transparent;
+    }
+    &:hover {
+      &:before {
+        border-left: 6px solid #eaeaea;
+      }
+    }
+
+    & a {
+      color: #b0b0b0;
+      text-decoration: none;
+      &:hover {
+        color: #eaeaea;
       }
     }
   }

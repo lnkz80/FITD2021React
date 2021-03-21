@@ -2,22 +2,33 @@ import React from 'react'
 
 import './ListMenu.scss'
 
- const ListMenu = ({items, isHeader}) => {
-     
+const ListMenu = ({items, isHeader}) => {
     
-    return (
-        <div className="listmenu">
-            <ul>
-                <li>
-                    <i>
-                        { isHeader ? items.icon : 'ico' }
-                    </i>
-                    <span>
-                        {items.text}
-                    </span>
-                </li>           
-            </ul>
-        </div>
+    const subMnu  = (items) => {
+        return (
+        <ul className="submenu">
+        {items.map(item =>            
+            <li><a href="">{item.text}</a></li>
+        )}
+        </ul>
+        )
+    }
+
+    const mnulist  = items.map(item =>
+            <>
+                <li key={item.id} className = {item.active ? "active" : "" }>
+                    <i>{item.icon}</i>
+                    <span>{item.text}</span>                                            
+                </li>  
+                {item.active && subMnu(item.submnu)}          
+            </>
+        )       
+    
+         
+    return (    
+            <ul className={isHeader ? "headmenu" : "listmenu"}>                
+                {mnulist}            
+            </ul>        
     )
 }
 
