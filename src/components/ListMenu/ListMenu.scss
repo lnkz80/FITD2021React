@@ -12,6 +12,7 @@ ul {
       }
     }
     span {
+      font-size: 1.1rem;
       line-height: 0;
     }
   }
@@ -19,13 +20,15 @@ ul {
 
 .headmenu {
   padding-bottom: 10px;
-  // border-bottom: 1px solid #eaeaea;
   li {
     justify-content: center;
-    font-size: 1.2rem;
     font-weight: bolder;
+    span {
+      font-size: 1.3rem;
+    }
   }
 }
+
 .listmenu {
   margin-top: 20px;
   li {
@@ -67,14 +70,17 @@ ul {
     }
   }
 }
+
 .submenu {
-  padding: 10px 0 10px 55px;
-  font-size: 0.9rem;
+  padding: 10px 0 15px 55px;
   li {
     padding: 0;
     background-color: #355b70;
+    a {
+      font-size: 0.9rem;
+    }
     &:before {
-      content: '';
+      content: "";
       border: 4px solid transparent;
       border-left: 6px solid transparent;
     }

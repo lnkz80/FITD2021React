@@ -1,5 +1,6 @@
 import React from 'react'
 import ListMenu from "./components/ListMenu"
+import Content from "./components/Content"
 
 import {mnuHead, mnuList} from "./data"
 
@@ -11,7 +12,7 @@ function App() {
         <ListMenu items={mnuList} />         
      </div>
      <div className="app__content">
-      <h3>Content</h3>
+      <Content/>
      </div>
    </div>
   );
