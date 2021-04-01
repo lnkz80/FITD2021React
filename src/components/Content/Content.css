@@ -1,0 +1,39 @@
+.content {
+  margin: 0;
+  padding: 0;
+}
+
+.content h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 10px 7px;
+  background-color: #c6c6c6;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.content h3 span {
+  color: #355b70;
+  font-size: 1.3rem;
+}
+
+.content h3 i {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  right: 10px;
+}
+
+.content h3 i svg path {
+  fill: #ffffff;
+}
+/*# sourceMappingURL=Content.css.map */

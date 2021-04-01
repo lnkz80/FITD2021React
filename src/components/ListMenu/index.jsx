@@ -1,4 +1,5 @@
 import React from 'react'
+import classNames from 'classnames'
 
 import './ListMenu.scss'
 
@@ -15,8 +16,8 @@ const ListMenu = ({items, isHeader}) => {
     }
 
     const mnulist  = items.map(item =>
-            <>
-                <li key={item.id} className = {item.active ? "active" : "" }>
+            <>                
+                <li key={item.id} className = {classNames({active:item.active})}>
                     <i>{item.icon}</i>
                     <span>{item.text}</span>                                            
                 </li>  

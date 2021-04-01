@@ -1,0 +1,117 @@
+ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul li i {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+ul li i svg path {
+  fill: #eaeaea;
+}
+
+ul li span {
+  font-size: 1.1rem;
+  line-height: 0;
+}
+
+.headmenu {
+  padding-bottom: 10px;
+}
+
+.headmenu li {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bolder;
+}
+
+.headmenu li span {
+  font-size: 1.3rem;
+}
+
+.listmenu {
+  margin-top: 20px;
+}
+
+.listmenu li {
+  background-color: #b0b0b0;
+  color: #355b70;
+  margin: 5px 10px;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.listmenu li:hover {
+  color: #eaeaea;
+}
+
+.listmenu li:hover svg path {
+  fill: #eaeaea;
+}
+
+.listmenu li i {
+  margin-left: 20px;
+}
+
+.listmenu li i svg path {
+  fill: #355b70;
+}
+
+.listmenu .active {
+  background-color: #fdef6f;
+}
+
+.listmenu .active:hover {
+  cursor: default;
+}
+
+.listmenu .active:hover span {
+  color: #355b70;
+}
+
+.listmenu .active:hover svg path {
+  fill: #355b70;
+}
+
+.submenu {
+  padding: 10px 0 15px 55px;
+}
+
+.submenu li {
+  padding: 0;
+  background-color: #355b70;
+}
+
+.submenu li a {
+  font-size: 0.9rem;
+}
+
+.submenu li:before {
+  content: "";
+  border: 4px solid transparent;
+  border-left: 6px solid transparent;
+}
+
+.submenu li:hover:before {
+  border-left: 6px solid #eaeaea;
+}
+
+.submenu li a {
+  color: #b0b0b0;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  color: #eaeaea;
+}
+/*# sourceMappingURL=ListMenu.css.map */
