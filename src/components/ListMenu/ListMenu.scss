@@ -80,7 +80,7 @@ ul {
       font-size: 0.9rem;
     }
     &:before {
-      content: '';
+      content: "";
       border: 4px solid transparent;
       border-left: 6px solid transparent;
     }
@@ -100,17 +100,17 @@ ul {
   }
 }
 
-.fade-enter {
-  opacity: 0;
+.mnuFade-enter {
+  height: 0;
 }
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transition: opacity 300ms ease-out;
+.mnuFade-enter.mnuFade-enter-active {
+  height: 100%;
+  transition: height 500ms ease-out;
 }
-.fade-leave {
-  opacity: 1;
+.mnuFade-leave {
+  height: 100%;
 }
-.fade-leave.fade-leave-active {
-  opacity: 0;
-  transition: opacity 300ms ease-out;
+.mnuFade-leave.mnuFade-leave-active {
+  height: 0;
+  transition: height 500ms ease-out;
 }

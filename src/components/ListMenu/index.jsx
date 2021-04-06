@@ -22,24 +22,32 @@ const ListMenu = ({items, isHeader}) => {
 
     const mnulist = items.map((item, index) =>
             <React.Fragment key={`fr` + index}>
+                <CSSTransitionGroup
+                transitionName="mnuFade"
+                transitionEnterTimeout={500}
+                transitionLeaveTimeout={500}> 
                 <li key={item.id} 
                  className = {classNames({active : activeItem === item.id})} 
                  onClick={()=>setActiveItem(item.id)}>
                     <i>{item.icon}</i>
                     <span>{item.text}</span>                                            
-                </li>  
+                </li> 
+                   
                 {activeItem === item.id && subMnu(item.submnu)}
+                </CSSTransitionGroup>
             </React.Fragment>
         )     
          
     return (    
         <ul className={isHeader ? "headmenu" : "listmenu"}> 
-            <CSSTransitionGroup
-                transitionName="fade"
+            {mnulist}
+
+            {/* <CSSTransitionGroup
+                transitionName="mnuFade"
                 transitionEnterTimeout={300}
-                transitionLeaveTimeout={300}>                
-                    {mnulist}                            
-            </CSSTransitionGroup>               
+                transitionLeaveTimeout={300}>                 */}
+                    {/* {mnulist}                             */}
+            {/* </CSSTransitionGroup>                */}
         </ul>   
                  
     )
