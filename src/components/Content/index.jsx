@@ -8,6 +8,7 @@ function Content() {
     return (
         <div className="content">
             <h3><span>Техника/</span> Журнал <i>{ico}</i> </h3>
+            <svg width='28' height='28' viewBox='0 0 28 28' fill="#000000" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 21.5V24.5H9.5V21.5H0.5ZM0.5 3.5V6.5H15.5V3.5H0.5ZM15.5 27.5V24.5H27.5V21.5H15.5V18.5H12.5V27.5H15.5ZM6.5 9.5V12.5H0.5V15.5H6.5V18.5H9.5V9.5H6.5ZM27.5 15.5V12.5H12.5V15.5H27.5ZM18.5 9.5H21.5V6.5H27.5V3.5H21.5V0.5H18.5V9.5Z" /></svg>
         </div>
     )
 }

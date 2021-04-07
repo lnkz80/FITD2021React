@@ -24,15 +24,14 @@ const ListMenu = ({items, isHeader}) => {
             <React.Fragment key={`fr` + index}>
                 <CSSTransitionGroup
                 transitionName="mnuFade"
-                transitionEnterTimeout={500}
-                transitionLeaveTimeout={500}> 
+                transitionEnterTimeout={300}
+                transitionLeaveTimeout={100}>    
                 <li key={item.id} 
                  className = {classNames({active : activeItem === item.id})} 
                  onClick={()=>setActiveItem(item.id)}>
-                    <i>{item.icon}</i>
+                    <i><svg width={item.icon.width} height={item.icon.height} viewBox={item.icon.viewbox} xmlns="http://www.w3.org/2000/svg"><path d={item.icon.pathD} /></svg></i>
                     <span>{item.text}</span>                                            
-                </li> 
-                   
+                </li>
                 {activeItem === item.id && subMnu(item.submnu)}
                 </CSSTransitionGroup>
             </React.Fragment>

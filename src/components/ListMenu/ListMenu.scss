@@ -101,16 +101,20 @@ ul {
 }
 
 .mnuFade-enter {
-  height: 0;
+  max-height: 0;
+  opacity: 0;
 }
 .mnuFade-enter.mnuFade-enter-active {
-  height: 100%;
-  transition: height 500ms ease-out;
+  max-height: 200px;
+  opacity: 1;
+  transition: max-height 300ms ease, opacity 200ms linear;
 }
 .mnuFade-leave {
-  height: 100%;
+  max-height: 200px;
+  opacity: 1;
 }
 .mnuFade-leave.mnuFade-leave-active {
-  height: 0;
-  transition: height 500ms ease-out;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 100ms ease, opacity 100ms linear;
 }
